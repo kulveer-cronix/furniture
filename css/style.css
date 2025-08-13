@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Allerta&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -378,7 +377,7 @@ footer .container ul li a:target {
 }
 
 .hero {
-  background: url(../../img/Rectangleᑁ.png) center;
+  background: url(../../img/Rectangle1441.png) center;
   background-size: 100% 100%;
   height: 70rem;
   width: 100%;
