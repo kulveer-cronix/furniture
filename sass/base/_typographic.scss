@@ -1,0 +1,23 @@
+h1 , h2 , h3{
+    font-family: 'Allerta';
+    font-weight: 200 !important;
+}
+h2{
+    font-size: 2.8rem;
+    padding-block: 1rem;
+    text-transform: capitalize;
+   @include responed(tab){
+     text-align: center;
+   }
+    
+}
+.heading-tertiary{
+    margin-bottom: 1.3rem;
+}
+.card-paragraph{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.9;
+    margin-bottom: .9rem;
+    color: $color-grey-dark;
+}

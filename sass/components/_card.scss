@@ -1,0 +1,71 @@
+.choose-box{
+    @include responed(tab){
+        padding: 20px;
+    }
+}
+.cards{
+    margin-top: 7rem;
+   
+.grid-col-4{
+    row-gap: 6rem;
+}
+    &-list{
+        gap: 22rem;
+       &-info{
+        padding-top: 18rem;
+         min-width: 16rem;
+         
+        position: relative;
+        background-color: $color-grey-light-2;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0 .1rem .1rem rgba($color-black,.15);
+        &-text{
+            position: relative;
+            padding: 10px;
+            background-color: $color-grey-light;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            .p_flex{
+                display: flex;
+                margin-bottom: 10px;
+                .bx-plus{
+                    padding: 10px ;
+                    background-color: $color-black;
+                    font-size: 1.5rem;
+                    color: $color-white;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 40px;
+                    transition: .4s all;
+                    &:hover{
+                        background-color: $color-white;
+                        color: $color-black;
+                        border: 1px solid $color-black;
+                    }
+
+                }
+            }
+        }
+       }
+       &-paragraph{
+        font-size: .8rem;
+        color: gray;
+
+       }
+       .heading-tertiary{
+        margin-bottom: 0;
+       }
+       .bxs-star{
+        color: $color-oranged;
+        margin-bottom: 20px;
+       }
+       &_img{
+           width: 17.5rem;
+           position: absolute;
+           top: -5rem;
+        }
+    }
+  
+}

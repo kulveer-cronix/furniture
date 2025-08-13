@@ -1,0 +1,19 @@
+.btn-simple{
+color: $color-oranged;
+padding: .2rem;
+transition:all .5s;
+
+cursor: pointer;
+.bx{
+    vertical-align: middle;
+    padding-bottom: 2px;
+
+}
+&:hover{
+    background: $color-oranged ;
+    color: $color-white;
+
+    backface-visibility: hidden;
+    // position: absolute;
+}
+}

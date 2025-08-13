@@ -1,0 +1,40 @@
+footer{
+    background-color: $color-grey-light;
+    padding: 2rem;
+    .container{
+      &>{
+        min-width: 100%;
+       p{
+        text-align: center;
+       }
+      }
+      ul{
+        padding: 1rem 5rem;
+        li{
+            margin: 10px 0;
+            text-align: center;
+            h3{
+                text-transform: capitalize;
+                color: $color-oranged;
+                margin-bottom: 20px;
+            }
+            a{
+                color: $color-black;
+                padding: .2rem .1rem;
+                transition: .2s all;
+                i{
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                &:hover{
+                    color: $color-white;
+                    background-color: $color-oranged;
+                }
+                &:target{
+                    color: $color-oranged;
+                }
+            }
+        }
+      }
+    }
+}

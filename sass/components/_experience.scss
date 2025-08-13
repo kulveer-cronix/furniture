@@ -1,0 +1,30 @@
+.section-text{
+    margin-top: 5rem;
+    
+    max-width: 550px;
+  margin-left: 5rem;
+    .paragraph-ex{
+        font-size: 1.3rem;
+        color: $color-oranged;
+        text-transform: uppercase;
+        margin: 0;   
+        @include responed(tab){
+            text-align: center;
+        }     
+    }
+    h2{
+        max-width: 80%;
+        @include responed(tab){
+            max-width: 100%;
+        }
+    }
+    p{
+        color: gray;
+        margin-block: 1rem 4rem;
+    }
+    @include responed(tab)
+    {
+        margin: 0 auto;
+        padding: 20px;
+    }
+}

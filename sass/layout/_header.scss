@@ -1,0 +1,81 @@
+
+.hero{
+    background: url(../../img/Rectangle\ 1441.png) center ;
+    background-size: 100% 100%;
+    height: 70rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    &_text{
+  width: 60%;
+     margin: 10.5rem auto 0;
+     
+        color: $color-white;
+     text-align: center;
+      @include responed(tab){
+        width: 90%;
+        
+    }
+    @include responed(phone){
+        width: 80%;
+
+    }
+    &-main{
+        font-size: 4rem;
+        font-weight: 200;
+    }
+    &-paragraph{
+        font-size: 1.5rem;
+     font-weight: 100;
+     margin: 2.8rem 0;
+
+    }
+    &-input{
+        // overflow: hidden;
+        border-radius: 50px;
+        border: 2px solid$color-white;
+        background:rgba(233, 232, 232, 0.166);
+        -webkit-backdrop-filter: blur(5px);
+        width: 26rem;
+        height: 3.5rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left:1rem;
+
+        input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+               height: 3.5rem;
+               @include responed (phone){
+                height: 2.5rem;
+                 width: 70%;
+               }
+    
+                color: white;
+                &::placeholder{
+                    color: $color-white;
+                    font-size: 1.1rem;
+                    font-weight: 200;
+                }
+            
+            
+        }
+        .bx-search{
+            color: $color-white;
+       font-size: 1.5rem;
+padding-top: .9rem;
+padding-inline: 1rem;
+// margin-right:1px;
+clip-path: circle(50% at 50% 50%);
+
+           background-color: $color-oranged;
+         
+        }
+        
+    }
+    }
+
+}       

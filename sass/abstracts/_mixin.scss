@@ -1,0 +1,30 @@
+@mixin responed ($breakpoint)
+{
+    @if $breakpoint == phone-s{
+        @media (max-width:20em) {@content}
+    }
+    @if $breakpoint == phone{
+        @media (max-width:25em) {@content}
+    }
+    @if $breakpoint == tab{
+        @media (max-width:48em) {@content}
+    }
+    @if $breakpoint == laptop{
+        @media (max-width:64em) {@content}
+    }
+    @if $breakpoint == laptop_large{
+        @media (max-width:90em) {@content}
+    }
+}
+
+@mixin grid_size ($grid-col-size){
+    @if $grid-col-size == $grid-col-val-2{
+        grid-template-columns: repeat(auto-fit,minmax($grid-col-val-2,auto));
+    }
+    @if $grid-col-size == $grid-col-val-3{
+        grid-template-columns: repeat(auto-fit,minmax($grid-col-val-3,auto));
+    }
+    @if $grid-col-size == $grid-col-val-4{
+        grid-template-columns: repeat(auto-fit,minmax($grid-col-val-4,auto));
+    }
+}

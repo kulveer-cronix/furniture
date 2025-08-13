@@ -1,0 +1,87 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 20px;
+   position: absolute;
+    width: 100%;
+
+    &-logo-text{
+        margin-top: 4px;
+    }
+    &-logo-text span{
+        font-size: 2rem;
+          color: $color-white;
+    }
+   &_menu-list{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    @include responed(tab){
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+    justify-content: initial;
+  padding-top: 4rem;
+    align-items: center;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      
+    background-color: $color-grey-dark;
+        flex-direction: column;
+       
+&.active{
+    opacity: 1;
+}
+    }
+   }
+   &_menu-item{
+    padding: 1rem 0;
+ 
+      
+       
+    
+   }
+     &_menu-link{
+        color: $color-white;
+        transition: all .5s;
+     }
+   .bx-shopping-bag , .bx-menu{
+    font-size: $default-font-size;
+    padding: 1rem 0;
+       color: $color-white;
+   }
+   .bx-menu{
+    background-color: $color-grey-light;
+    padding: 1rem;
+    color: $color-black;
+    border-radius: 50%;
+     position: fixed;
+     right: 4rem;
+     z-index: 100000;
+     display: none;
+     @include responed(tab){
+        display: initial;
+       
+     }
+
+   }
+
+   
+   
+}
+.nav-bg-change{
+    background-color: $color-grey-light;
+    &-logo-text span{
+     
+          color: $color-black;
+    }
+      &_menu-link{
+        color: $color-black;
+     }
+     
+     .bx-shopping-bag {
+        color: $color-black;
+     }
+}

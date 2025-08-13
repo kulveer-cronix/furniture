@@ -1,0 +1,24 @@
+//main folder
+@import './abstracts/function';
+@import './abstracts/mixin';
+@import './abstracts/variables';
+
+//base folder
+@import './base/base';
+@import './base/animaction';
+@import './base/typographic';
+
+//components folder
+@import './components/button';
+@import './components/card';
+@import './components/experience';
+
+//layout folder
+@import './layout/footer';
+@import './layout/grid';
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/tesitimonials';
+
+//pages folder
+@import './pages/home'

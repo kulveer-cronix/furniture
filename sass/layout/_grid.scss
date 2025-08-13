@@ -1,0 +1,25 @@
+.container{
+
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+gap: 2rem;
+}
+.grid-col-2{
+    
+  @include grid_size($grid-col-val-2);
+
+}
+.grid-col-3{
+    
+  @include grid_size($grid-col-val-3);
+
+}
+.grid-col-4{
+    
+  @include grid_size($grid-col-val-4);
+
+}
